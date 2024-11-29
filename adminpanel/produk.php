@@ -121,7 +121,7 @@
                     <?php
                 }
                 else{
-                    if($imageFileType != 'jpg' && $imageFileType != 'png' && $imageFileType != 'gif') {
+                    if($imageFileType != 'jpg' && $imageFileType != 'png' && $imageFileType != 'jpeg') {
                         ?>
                         <div class="alert alert-secondary" role="alert">
                    File Wajib png jpg dan gif
