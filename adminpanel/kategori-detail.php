@@ -69,7 +69,7 @@
         if(isset($_POST['deletion'])){
 
                 $queryCheck=mysqli_query($con,"SELECT * FROM produk WHERE kategori_id='$id'");
-                $dataExist = mysqli_num_rows($queryCheck);
+                $dataCount = mysqli_num_rows($queryCheck);
 
                 if($dataCount>0){
                     ?>

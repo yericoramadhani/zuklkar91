@@ -28,7 +28,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-wiial-scale=1.0">
     <title>produk detail</title>
     <link rel="stylesheet" href="../bootsrap/css/bootstrap.min.css">
 </head>
@@ -40,11 +40,13 @@
 <div class="container mt-5">
 </div>
     <div class="col-12 col-md-6 mb-5">
-        <div>
-          <form action=""method="post">
-         <label for="nama">Nama</label>
-            <input type="text" name="nama" id="nama" class="form-control" value="<?php echo $data['nama']?>" autocomplete="off"required>
-             </div>
+    <form action=""method="post" enctype="multipart/form-data"> 
+        
+    <div>
+        <label for="nama">Nama</label>
+    <input type="tedth, initxt" name="nama" id="nama" class="form-control" value="<?php echo $data['nama']?>" autocomplete="off"required>
+    </div>
+         
 
              <div>
              <label for="kategori">Kategori</label>
@@ -64,8 +66,8 @@
             <input type="number" class="form-control" value="<?php echo $data['harga']?>" name="harga" required>
         </div>
         <div>
-            <label for="currentfoto">Foto Produk sekarang</label>
-            <img src="../rahasia/<?php echo $data ['foto']?>" alt="" width="300px">
+            <label for="currentFoto">Foto Produk sekarang</label>
+         <img src="../rahasia/<?php echo $data['foto']?>" alt="" >
         </div>
        <div>
         <label for="foto">foto</label>
@@ -99,7 +101,9 @@
             <button type="submit" class="btn btn-primary" name="update">update</button>
             <button type="submit" class="btn btn-danger" name="hapus">delete</button>
         </div>
-            </form>
+    </form>
+    
+            
             <?php
             if(isset($_POST['update'])){
                 $nama = htmlspecialchars($_POST['nama']);
