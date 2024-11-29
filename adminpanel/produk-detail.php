@@ -67,9 +67,9 @@
             <label for="currentfoto">Foto Produk sekarang</label>
             <img src="../rahasia/<?php echo $data ['foto']?>" alt="" width="300px">
         </div>
-        <div>
-             <label for="formFile" class="form-label">upload</label>
-             <input class="form-control" type="file" id="foto" name="foto">
+       <div>
+        <label for="foto">foto</label>
+        <input type="file"name="foto" id="foto" class="form-control">
         </div>
         <div>
         <label for="detail">Detail</label>
@@ -127,7 +127,7 @@
                 }else{
                     $queryupdate = mysqli_query($con,"UPDATE produk SET kategori_id='kategori', nama='$nama', harga='$harga', detail='$detail', ketersedian_stok'$ketersediaan_stok' WHERE id=$id");
 
-                    if($imageFileType != 'jpg' && $imageFileType != 'png' && $imageFileType != 'gif') {
+                    if($imageFileType != 'jpg' && $imageFileType != 'png' && $imageFileType != 'jpeg') {
                         ?>
                         <div class="alert alert-secondary" role="alert">
                    File Wajib png jpg dan gif

@@ -75,8 +75,8 @@
             <input type="number" class="form-control" name="harga" required>
         </div>
         <div>
-             <label for="formFile" class="form-label">upload</label>
-             <input class="form-control" type="file" id="foto" name="foto">
+        <label for="foto">foto</label>
+        <input type="file"name="foto" id="foto" class="form-control">
         </div>
         <div>
         <label for="detail">Detail</label>
