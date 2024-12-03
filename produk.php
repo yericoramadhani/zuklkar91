@@ -8,8 +8,9 @@
 <body>
     <?php require "navbar.php" ?>
 <!--banner-->
-    <div class="comtainer-fluid">
+    <div class="comtainer-fluid banner-produk">
+    </div class="container"></div>
+</div>
 
-    </div>
 </body>
 </html>
