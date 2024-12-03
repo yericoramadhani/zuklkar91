@@ -10,7 +10,7 @@
 <!--banner-->
     <div class="comtainer-fluid banner-produk">
     </div class="container"></div>
-</div class_alias>
+</div class>
 
 </body>
 </html>
