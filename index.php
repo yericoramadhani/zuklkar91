@@ -1,4 +1,11 @@
-                <!DOCTYPE html>
+            <?php 
+            
+            require "koneksi.php";
+            $queryproduk = mysqli_query($con, "SELECT id,nama,harga,foto,detail FROM produk LIMIT 6");
+
+            ?>     
+              
+              <!DOCTYPE html>
                 <html lang="en">
                 <head>
                     <meta charset="UTF-8">
@@ -69,9 +76,27 @@
                 </div>
 
             <!--produk-->
-                <div>
-                    <div>
+                <div class="container-fluid py-5">
+                    <div class="container text-center">
                         <h3></h3>
+
+
+                        <div class="row mt-5">
+                        <?php while($data = mysqli_fetch_array($queryproduk)) { ?>
+                            <!--awalan-->
+                            <div class="col-sm-6 col-md-4 mb-4">
+                            <div class="card" >
+                                <img src="image/kopi1.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text text-truncate">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                   <p class="card-text text-harga"> Rp.15.000</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                                </div>
+                            </div>
+                            <?php }?>
+                        </div>
                     </div>
                 </div>
                     
